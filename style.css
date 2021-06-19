@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan : hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);   
+}
+
+body{
+  background: var(--very-light-gray);
+  font-family: 'Lexend Deca', sans-serif; 
+  font-size: 15px;
+  font-weight:lighter;
+  color: var(--transparent-white);
+}
+
+#container{
+   width: 75%; 
+   box-shadow: 1px 1px 9px black;;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-content: center;
+   position: relative;
+   top:60px;
+   border-radius: 10px ;
+}
+
+#container div{
+ padding: 50px;   
+}
+
+#luxury{
+    background-color:var(--very-dark-cyan);
+    border-radius: 0px 10px 10px 0px;
+}
+
+#suvs{
+    background: var(--dark-cyan);
+}
+
+#sedans{
+    background: var(--bright-orange);
+    border-radius: 10px 0px 0px 10px;
+}
+
+p{
+    padding-bottom: 50px;
+}
+
+.learn{
+    background: none;
+    border:none;
+    outline: none;
+    background: var(--very-light-gray);
+    padding: 10px;
+    border-radius: 30px;
+    width: 60%;
+    font-family: 'Lexend Deca', sans-serif; 
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#seden-btn{
+    color: var(--bright-orange);
+}
+
+#suv-btn{
+    color: var(--dark-cyan);
+}
+
+#lux-btn{
+    color: var(--very-dark-cyan);
+} 
+
+.learn:hover{
+    background: transparent;
+    color:white !important;
+    border:1px solid var(--transparent-white);
+    cursor: pointer;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+}
+
+@media(max-width:700px)
+{
+    #container{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+        max-width: 90%;
+    }
+
+    #luxury{
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    #sedans{
+        border-radius: 10px 10px 0px 0px;
+    }
+
+}
